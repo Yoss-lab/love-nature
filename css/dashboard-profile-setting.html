@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from amentotech.com/htmls/psello/dashboard-profile-setting.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Nov 2020 10:39:24 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BootStrap HTML5 CSS3 Theme</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fontawesome/fontawesome-all.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/dashboard-responsive.css">
+</head>
+<body>
+    <!-- PRELOADER START -->
+    <div class="preloader-outer">
+        <figure><img src="images/img-face.png" alt="Image Description">
+            <span class="pulse"></span>
+        </figure>
+    </div>
+    <!-- PRELOADER END -->
+    <!-- HEADER START -->
+    <header class="ps-main-header3">
+        <nav>
+            <div class="navbar navbar-expand-lg navbar-light ps-navbar">
+                <div class="ps-navbar__header">
+                    <a href="index-2.html" class="navbar-brand"><img src="images/logo.png" alt="Image Description"></a>
+                    <div class="ps-header-form">
+                        <form class="ps-form ps-main-form">
+                            <div class="ps-form__input"><input class="form-control" placeholder="What Are You Looking For?"></div>
+                            <div>
+                                <div class="ps-geo-location ps-location">
+                                    <input type="text" class="form-control" placeholder="Location*">
+                                    <a href="javascript:void(0);" class="ps-location-icon ps-index-icon"><i class="ti-target"></i></a>
+                                    <a href="javascript:void(0);" class="ps-arrow-icon ps-index-icon"><i class="ti-angle-down"></i></a>
+                                    <div class="ps-distance">
+                                        <div class="ps-distance__description">
+                                            <label for="amountfour">Distance:</label>
+                                            <input type="text" id="amountfour" readonly>
+                                        </div>                                           
+                                        <div id="slider-range-min"></div>
+                                    </div>
+                                </div>                     
+                                <button class="btn ps-btn">Search Now</button>                     
+                                <button class="btn ps-btn ps-icon"><i class="ti-search"></i></button>
+                            </div>
+                        </form>
+                        <div class="ps-form--cancel">
+                            <a href="javascript:void(0);">Cancel</a>
+                            <a href="javascript:void(0);" class="ps-icon"><i class="ti-close"></i></a>
+                        </div> 
+                        <div class="ps-form-btn">
+                            <button class="btn ps-btn">
+                                <i class="ti-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="ps-nav" class="ps-nav navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="lnr lnr-menu"></i>
+                        </button>
+                        <div class="collapse navbar-collapse ps-navigation" id="navbarNav">
+                            <ul class="navbar-nav nav-Js ml-auto ps-nav ps-nav__ul">
+                                <li class="ps-menuhover menu-item-has-children page_item_has_children">
+                                    <a href="javascript:void(0);">Main <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="sub-menu ps-dropdown ps-first__dropdown">
+                                        <li class="nav-item"><a href="index-2.html">Home 1</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a href="index-v2.html">Home 2</a></li> 
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="categories.html">Categories</a></li>
+                                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                                <li class="ps-menuhover menu-item-has-children page_item_has_children">
+                                    <a href="javascript:void(0);"><span class="lnr lnr-menu"></span></a>
+                                    <ul class="ps-dropdown sub-menu">
+                                        <li>
+                                            <a href="about.html">About</a>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="current-menu-item">
+                                            <a href="privacy-info.html">Privacy Info</a>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="ps-menuhover ps-submenuhover menu-item-has-children page_item_has_children">
+                                            <a href="javascript:void(0);">Blog<i class="ti-angle-right"></i></a>
+                                            <ul class="ps-dropdown ps-submenu sub-menu">
+                                                <li class="nav-item"><a href="blog-grid.html">Blog Grid</a></li>                             
+                                                <li class="dropdown-divider"></li>
+                                                <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>  
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item ps-menuhover ps-submenuhover menu-item-has-children page_item_has_children">
+                                            <a href="javascript:void(0);">Listing <i class="ti-angle-right"></i></a>
+                                            <ul class="ps-dropdown ps-submenu sub-menu">
+                                                <li class="nav-item"><a href="listing-grid.html">Listing Grid</a></li>                             
+                                                <li class="dropdown-divider"></li>
+                                                <li class="nav-item"><a href="listing-list.html">Listing List</a></li>  
+                                                <li class="dropdown-divider"></li>
+                                                <li class="nav-item"><a href="listing-single.html">Listing Single</a></li>  
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a href="login.html">Login</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a href="coming-soon.html">Coming Soon</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a href="404-error.html">404 Error</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="ps-navbar__userbtn">
+                        <div class="ps-headeruser">              
+                            <ul class="navbar-nav ps-nav">
+                                <li class="nav-item ps-login--btn"><button class="btn ps-btn">Login / Register</button></li>
+                                <li class="nav-item dropdown ps-menuhover ps-userlogo"><a href="javascript:void(0);" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><figure class="d-inline-block">
+                                        <img src="images/user-logo.jpg" alt="Image Description">
+                                    </figure>
+                                    <span><i class="fas fa-chevron-down"></i></span> </a>
+                                    <ul class="dropdown-menu ps-dropdown ps-user__dropdown position-absolute" aria-labelledby="navbarDropdown4">
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-insights.html"><i class="ti-dashboard"></i>Insights</a></li>                             
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-profile-setting.html"><i class="ti-user"></i>Profile Settings</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-my-ads.html"><i class="ti-align-justify"></i>My Ads</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-post-ad.html"><i class="ti-settings"></i>Post Ads</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-offers-messages.html"><i class="ti-email"></i>Offers/Messages</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-buy-package.html"><i class="ti-shopping-cart"></i>Buy New Packages</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-payments.html"><i class="ti-user"></i>Payments</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item dropdown ps-menuhover ps-submenuhover">
+                                            <a class="dropdown-item" href="javascript:void(0);" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="ti-heart"></i>My Favorite <i class="ti-angle-right ps-right"></i>
+                                            </a>
+                                            <ul class="dropdown-menu ps-dropdown ps-submenu navbar-nav" aria-labelledby="navbarDropdown5">
+                                                <li class="nav-item"><a class="dropdown-item" href="dashboard-my-favorite.html">Favorite Listing</a></li>                             
+                                                <li class="dropdown-divider"></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="javascript:void(0);">Sub Menu</a></li>
+                                            </ul>
+                                        </li> 
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-account-setting.html"><i class="ti-bookmark"></i>Account Settings</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="index-2.html"><i class="ti-shift-right"></i>Logout</a></li>  
+                                    </ul>
+                                </li>                             
+                                <li class="nav-item ps-post--btn"><a href="dashboard-insights.html" class="btn ps-btn">Post Ad</a></li>
+                            </ul>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+    <!-- BANNER START -->
+    <div class="ps-main-banner">
+        <div class="ps-dark-overlay">
+            <div class="container">
+                <div class="ps-banner-content">
+                    <h4>Profile Settings</h4>
+                    <p><a href="index-2.html">Home</a> <span><i class="ti-angle-right"></i></span> <a href="insights.html">Dashboard</a> <span> <i class="ti-angle-right"></i></span> Profile Settings</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER END -->
+    <!-- MAIN START -->
+    <main class="ps-main">
+        <section class="ps-main-section">
+            <div class="container">
+                <div class="row">
+                    <!-- SIDEBAR START -->
+                    <div class="col-lg-4">
+                        <div class="ps-dashboard-sidebar">
+                            <div class="ps-dashboard-sidebar__user">
+                                <figure><img src="images/insights/user-img.jpg" alt="Image Description"></figure>
+                                <div class="ps-seller__description">
+                                    <h6>Lorina Statham</h6>
+                                    <div class="ps-h5">Status: 
+                                        <a data-toggle="collapse" href="#collapseUser" role="button" aria-expanded="false">
+                                            <span><em class="ps-online"></em><i class="fa fa-sort-down"></i></span><em>Online</em> 
+                                        </a>
+                                        <div class="collapse" id="collapseUser">
+                                            <a href="javascript:void(0);"><span class="ps-online"></span><em>Online</em></a>
+                                            <a href="javascript:void(0);"><span class="ps-away"></span><em>Away</em></a>
+                                            <a href="javascript:void(0);"><span class="ps-busy"></span><em>Busy</em></a>
+                                            <a href="javascript:void(0);"><span class="ps-offline"></span><em>Offline</em></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ps-dashboard-sidebar__edit"><a href="javascript:void(0);"><i class="ti-pencil"></i></a></div>
+                            </div>
+                            <ul>
+                                <li><a href="dashboard-insights.html"><i class="ti-dashboard"></i> <span>Insights</span> </a></li>
+                                <li><a href="dashboard-profile-setting.html" class="ps-user-dhb"><i class="ti-user"></i> <span>Profile Settings</span> </a></li>
+                                <li><a href="dashboard-my-ads.html"><i class="ti-align-justify"></i> <span>My Ads</span> </a></li>
+                                <li><a href="dashboard-post-ad.html"><i class="ti-settings"></i> <span>Post Ad</span> </a></li>
+                                <li><a href="dashboard-offers-messages.html"><i class="ti-email"></i> <span>Offers/messages</span> </a></li>
+                                <li><a href="dashboard-buy-package.html" class="ps-active--line"><i class="ti-shopping-cart"></i> <span>Buy New Packages</span> </a></li>
+                                <li><a href="dashboard-payments.html"><i class="ti-user"></i> <span>Payments</span> </a></li>
+                                <li>
+                                    <a  data-toggle="collapse" href="#collapsenew" role="button" aria-expanded="false"><i class="ti-heart"></i> <span>My Favorite</span> <span class="ps-right"><i class="ti-angle-right"></i></span> </a>
+                                    <ul class="collapse" id="collapsenew">
+                                        <li><a href="dashboard-my-favorite.html"><span>Favorite Listing</span></a></li>
+                                        <li><a href="javascript:void(0);"><span>Sub Menu</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="dashboard-account-setting.html"><i class="ti-bookmark"></i> <span>Account & Privacy Settings</span> </a></li>
+                                <li><a href="index-2.html"><i class="ti-shift-right"></i> <span>Logout</span> </a></li>
+                            </ul>
+                        </div>
+                        <div class="ps-gridList__ad ps-dashboard-img d-none d-lg-flex">
+                            <a href="javascript:void(0);"><figure><img src="images/ad-img.jpg" alt="Image Description"></figure></a>
+                            <span>Advertisement  255px X 255px</span>
+                        </div>
+                    </div>
+                    <!-- SIDEBAR END -->
+                    <!-- PROFILE SETTINGS START -->
+                    <div class="col-lg-8 ps-dashboard-user">
+                        <div class="ps-posted-ads ps-profile-setting">
+                            <div class="ps-posted-ads__heading">
+                                <h5>Profile Settings</h5>
+                                <p>Click “Save Changes” to update</p>
+                                <button class="btn ps-btn">Save Changes</button>
+                            </div>
+                            <div class="ps-profile-setting__content">
+                                <form class="ps-profile-form">
+                                    <div class="ps-profile--row">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="formGroupExampleInput1" required placeholder="First Name*">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="formGroupExampleInput2" required placeholder="Last Name*">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <select class="form-control">
+                                                    <option value="" disabled selected hidden>Select Gender:</option>
+                                                    <option value="" >Male</option>
+                                                    <option value="">Female</option>
+                                                    <option value="">Other</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control ps-taken" required id="formGroupExampleInput3" placeholder="Username*">
+                                            <em>Already taken  :(</em>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="formGroupExampleInput4" required placeholder="Mobile Number*">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="formGroupExampleInput5" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="formGroupExampleInput6" placeholder="Skype ID">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="formGroupExampleInput7" placeholder="Whatsapp">
+                                        </div>
+                                        <div class="form-group ps-fullwidth">
+                                            <input type="text" class="form-control" id="formGroupExampleInput8" placeholder="Enter Logitude">
+                                        </div>
+                                        <div class="ps-profile-map ps-fullwidth">
+                                            <div id="ps-locationmap"></div>
+                                            <figure class="ps-circle">
+                                                <img src="images/profile-setting/img-01.png" alt="Image Description">
+                                            </figure>
+                                        </div>
+                                        <div class="form-group ps-fullwidth">
+                                            <input type="text" class="form-control" id="formGroupExampleInput9" placeholder="Enter Latitude">
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="ps-profile-setting__upload">
+                                    <h5>Profile Settings</h5>
+                                    <div class="ps-profile-setting__uploadarea">
+                                        <label for="filepf">
+                                            <span class="btn ps-btn">Select File</span>
+                                            <input type="file" name="file" id="filepf" class="d-none">
+                                        </label>
+                                        <!-- <button class="btn ps-btn">Select File</button> -->
+                                        <p class="ps-drop">Drop files here to upload</p>
+                                        <div></div>
+                                        <p class="ps-loading">Uploading</p>
+                                        <svg>
+                                            <rect height="60px" width="100%" rx="6px"  stroke-width="2"  stroke-dasharray="12 12" />
+                                        </svg>
+                                    </div>
+                                    <form class="ps-profile-setting__imgs ps-x-axis mCustomScrollbar">
+                                        <input id="radio1" type="radio" name="radio">
+                                        <label for="radio1">
+                                            <span>
+                                                <img src="images/profile-setting/img-01.jpg" alt="Image Description">
+                                                <a class="ps-trash" href="javascript:void(0);"><span><i class="ti-trash"></i></span></a>
+                                                <span class="ps-tick"><span><i class="fas fa-check"></i></span></span>
+                                            </span>
+                                        </label>
+                                        <input id="radio2" type="radio" name="radio">
+                                        <label for="radio2">
+                                            <span>
+                                                <img src="images/profile-setting/img-02.jpg" alt="Image Description">
+                                                <a class="ps-trash" href="javascript:void(0);"><span><i class="ti-trash"></i></span></a> 
+                                                <span class="ps-tick"><span><i class="fas fa-check"></i></span></span>  
+                                            </span>
+                                        </label>
+                                        <input id="radio3" type="radio" name="radio">
+                                        <label for="radio3">
+                                            <span>
+                                                <img src="images/profile-setting/img-03.jpg" alt="Image Description">
+                                                <a class="ps-trash" href="javascript:void(0);"><span><i class="ti-trash"></i></span></a>  
+                                                <span class="ps-tick"><span><i class="fas fa-check"></i></span></span> 
+                                            </span>
+                                        </label>
+                                        <input id="radio4" type="radio" name="radio">
+                                        <label for="radio4">
+                                            <span>
+                                                <img src="images/profile-setting/img-04.jpg" alt="Image Description">
+                                                <a class="ps-trash" href="javascript:void(0);"><span><i class="ti-trash"></i></span></a> 
+                                                <span class="ps-tick"><span><i class="fas fa-check"></i></span></span>  
+                                            </span>
+                                        </label>
+                                        <input id="radio5" type="radio" name="radio">
+                                        <label for="radio5">
+                                            <span>
+                                                <img src="images/profile-setting/img-05.jpg" alt="Image Description">
+                                                <a class="ps-trash" href="javascript:void(0);"><span><i class="ti-trash"></i></span></a>   
+                                                <span class="ps-tick"><span><i class="fas fa-check"></i></span></span>
+                                            </span>
+                                        </label>
+                                        <input id="radio6" type="radio" name="radio">
+                                        <label for="radio6">
+                                            <span>
+                                                <img src="images/profile-setting/img-05.jpg" alt="Image Description">
+                                                <a class="ps-trash" href="javascript:void(0);"><span><i class="ti-trash"></i></span></a>   
+                                                <span class="ps-tick"><span><i class="fas fa-check"></i></span></span>
+                                            </span>
+                                        </label>
+                                    </form>
+                                </div>
+                                <div class="ps-profile-setting__save">
+                                    <button class="btn ps-btn">Save Changes</button>
+                                    <p>Click “Save Changes” to update</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PROFILE SETTINGS END -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <footer class="ps-main-footer">
+        <section class="ps-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-6">
+                        <div class="ps-footer__left">
+                            <figure><img src="images/footer/img-01.png" alt="Image Description"></figure>
+                            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt utbor etian dolm magna aliqua enim ad minim veniam quis nostrud exercita ullamco laboris nisie aliquip commodo okialama sikune pisuye.</p>
+                            <ul class="ps-footer__contact">
+                                <li><a href="javascript:void(0);"><i class="lnr lnr-location"></i> 123 New Design Street, Melbour Australia 54214</a></li>
+                                <li><a href="javascript:void(0);"><i class="lnr lnr-envelope"></i> info@domainurl.com</a></li>
+                                <li><a href="javascript:void(0);"><i class="lnr lnr-phone-handset"></i> (0800) 1234 567891</a></li>
+                            </ul>
+                            <ul class="ps-footer__social-media">
+                                <li class="ps-facebook"><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="ps-twitter"><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+                                <li class="ps-linkedin"><a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="ps-instagram"><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+                                <li class="ps-youtube"><a href="javascript:void(0);"><i class="fab fa-youtube"></i></a></li>
+                                <li class="ps-google-plus"><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ps-footer__link">
+                            <h6>Useful Links</h6>
+                            <ul>
+                                <li><a href="javascript:void(0);">How it works?</a></li>
+                                <li><a href="javascript:void(0);">About</a></li>
+                                <li><a href="javascript:void(0);">Listing Grid</a></li>
+                                <li><a href="javascript:void(0);">Listing Single -  With Chatbox</a></li>
+                                <li><a href="javascript:void(0);">Latest Article Grid</a></li>
+                                <li><a href="javascript:void(0);">Latest Article Detail</a></li>
+                                <li><a href="javascript:void(0);">Login Or Register</a></li>
+                                <li><a href="javascript:void(0);">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ps-footer__newsletter">
+                            <h6>Newsletter</h6>
+                            <p>Eiusmod tempor incididunt utbor etian dolm magna aliqua enim minim</p>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon1">
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="ti-arrow-right"></i></button>
+                                </div>
+                            </div>
+                            <h6>Download Mobile App</h6>
+                            <div class="ps-footer__img">
+                                <a href="javascript:void(0);"><figure><img src="images/footer/img-02.png" alt="Image Description"></figure></a>
+                                <a href="javascript:void(0);"><figure><img src="images/footer/img-03.png" alt="Image Description"></figure></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="ps-footer-down">
+            <P>Copyrights © 2019 by<a href="javascript:void(0);"> PSello</a>. All Rights Reserved.</P>
+        </div>
+    </footer>
+    <!-- MAIN END -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/jquery-library.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/infobox/data.json"></script>
+    <script src="js/infobox/mapclustering.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.ui.touch-punch.js"></script>
+    <script src="js/vendor/markerclusterer.min.js"></script>
+    <script src="js/vendor/mapclustering.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ3q6w3hiHe_MIbB1Jy31bGOwL8LYlwJw"></script>
+    <script src="js/vendor/gmap3.min.js"></script>
+    <script src="js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+<!-- Mirrored from amentotech.com/htmls/psello/dashboard-profile-setting.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Nov 2020 10:39:29 GMT -->
+</html>

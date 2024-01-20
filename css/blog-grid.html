@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from amentotech.com/htmls/psello/blog-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Nov 2020 10:38:37 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BootStrap HTML5 CSS3 Theme</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fontawesome/fontawesome-all.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/transitions.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- PRELOADER START -->
+    <div class="preloader-outer">
+        <figure><img src="images/img-face.png" alt="Image Description">
+            <span class="pulse"></span>
+        </figure>
+    </div>
+    <!-- PRELOADER END -->
+    <!-- HEADER START -->
+    <header class="ps-main-header3">
+        <nav>
+            <div class="navbar navbar-expand-lg navbar-light ps-navbar">
+                <div class="ps-navbar__header">
+                    <a href="index-2.html" class="navbar-brand"><img src="images/logo.png" alt="Image Description"></a>
+                    <div class="ps-header-form">
+                        <form class="ps-form ps-main-form">
+                            <div class="ps-form__input"><input class="form-control" placeholder="What Are You Looking For?"></div>
+                            <div>
+                                <div class="ps-geo-location ps-location">
+                                    <input type="text" class="form-control" placeholder="Location*">
+                                    <a href="javascript:void(0);" class="ps-location-icon ps-index-icon"><i class="ti-target"></i></a>
+                                    <a href="javascript:void(0);" class="ps-arrow-icon ps-index-icon"><i class="ti-angle-down"></i></a>
+                                    <div class="ps-distance">
+                                        <div class="ps-distance__description">
+                                            <label for="amountfour">Distance:</label>
+                                            <input type="text" id="amountfour" readonly>
+                                        </div>                                           
+                                        <div id="slider-range-min"></div>
+                                    </div>
+                                </div>                     
+                                <button class="btn ps-btn">Search Now</button>   
+                                <button class="btn ps-btn ps-icon"><i class="ti-search"></i></button>                   
+                            </div>
+                        </form>
+                        <div class="ps-form--cancel">
+                            <a href="javascript:void(0);">Cancel</a>
+                            <a href="javascript:void(0);" class="ps-icon"><i class="ti-close"></i></a>
+                        </div> 
+                        <div class="ps-form-btn">
+                            <button class="btn ps-btn">
+                                <i class="ti-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="ps-nav" class="ps-nav navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="lnr lnr-menu"></i>
+                        </button>
+                        <div class="collapse navbar-collapse ps-navigation" id="navbarNav">
+                            <ul class="navbar-nav nav-Js ml-auto ps-nav ps-nav__ul">
+                                <li class="ps-menuhover menu-item-has-children page_item_has_children">
+                                    <a href="javascript:void(0);">Main <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="sub-menu ps-dropdown ps-first__dropdown">
+                                        <li class="nav-item"><a href="index-2.html">Home 1</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a href="index-v2.html">Home 2</a></li> 
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="categories.html">Categories</a></li>
+                                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                                <li class="ps-menuhover menu-item-has-children page_item_has_children">
+                                    <a href="javascript:void(0);" class="ps-header__line"><span class="lnr lnr-menu"></span></a>
+                                    <ul class="ps-dropdown sub-menu">
+                                        <li>
+                                            <a href="about.html">About</a>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="current-menu-item">
+                                            <a href="privacy-info.html">Privacy Info</a>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="ps-menuhover ps-submenuhover menu-item-has-children page_item_has_children">
+                                            <a href="javascript:void(0);">Blog<i class="ti-angle-right"></i></a>
+                                            <ul class="ps-dropdown ps-submenu sub-menu">
+                                                <li class="nav-item"><a href="blog-grid.html">Blog Grid</a></li>                             
+                                                <li class="dropdown-divider"></li>
+                                                <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>  
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item ps-menuhover ps-submenuhover menu-item-has-children page_item_has_children">
+                                            <a href="javascript:void(0);">Listing <i class="ti-angle-right"></i></a>
+                                            <ul class="ps-dropdown ps-submenu sub-menu">
+                                                <li class="nav-item"><a href="listing-grid.html">Listing Grid</a></li>                             
+                                                <li class="dropdown-divider"></li>
+                                                <li class="nav-item"><a href="listing-list.html">Listing List</a></li>  
+                                                <li class="dropdown-divider"></li>
+                                                <li class="nav-item"><a href="listing-single.html">Listing Single</a></li>  
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a href="login.html">Login</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a href="coming-soon.html">Coming Soon</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a href="404-error.html">404 Error</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ps-navbar__userbtn">
+                        <div class="ps-headeruser">              
+                            <ul class="navbar-nav ps-nav">
+                                <li class="nav-item ps-login--btn"><a href="login.html" class="btn ps-btn">Login / Register</a></li>
+                                <li class="nav-item dropdown ps-menuhover ps-userlogo">
+                                    <a href="javascript:void(0);" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <figure class="d-inline-block">
+                                            <img src="images/user-logo.jpg" alt="Image Description">
+                                        </figure>
+                                    <span><i class="fas fa-chevron-down"></i></span>
+                                    </a>
+                                    <ul class="dropdown-menu ps-dropdown ps-user__dropdown position-absolute" aria-labelledby="navbarDropdown4">
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-insights.html"><i class="ti-dashboard"></i>Insights</a></li>                             
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-profile-setting.html"><i class="ti-user"></i>Profile Settings</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-my-ads.html"><i class="ti-align-justify"></i>My Ads</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-post-ad.html"><i class="ti-settings"></i>Post Ads</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-offers-messages.html"><i class="ti-email"></i>Offers/Messages</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-buy-package.html"><i class="ti-shopping-cart"></i>Buy New Packages</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-payments.html"><i class="ti-user"></i>Payments</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item dropdown ps-menuhover ps-submenuhover">
+                                            <a class="dropdown-item" href="javascript:void(0);" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="ti-heart"></i>My Favorite <i class="ti-angle-right ps-right"></i>
+                                            </a>
+                                            <ul class="dropdown-menu ps-dropdown ps-submenu navbar-nav" aria-labelledby="navbarDropdown5">
+                                                <li class="nav-item"><a class="dropdown-item" href="dashboard-my-favorite.html">Favorite Listing</a></li>                             
+                                                <li class="dropdown-divider"></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="javascript:void(0);">Sub Menu</a></li>
+                                            </ul>
+                                        </li> 
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="dashboard-account-setting.html"><i class="ti-bookmark"></i>Account Setting</a></li>  
+                                        <li class="dropdown-divider"></li>
+                                        <li class="nav-item"><a class="dropdown-item" href="index-2.html"><i class="ti-shift-right"></i>Logout</a></li>  
+                                    </ul>
+                                </li>                            
+                                <li class="nav-item ps-post--btn"><a href="dashboard-insights.html" class="btn ps-btn">Post Ad</a></li>
+                            </ul>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+    <!-- BANNER START -->
+    <div class="ps-main-banner">
+        <div class="ps-banner-img3">
+            <div class="ps-dark-overlay2">
+                <div class="container">
+                    <div class="ps-banner-contentv3">
+                        <h4>Stay Updated With News</h4>
+                        <p><a href="index-2.html">Home</a> <span><i class="ti-angle-right"></i></span> Blog Grid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER END -->
+    <!-- MAIN START -->
+    <main class="ps-main">
+        <section class="container">
+            <div class="row ps-gridList ps-main-section ps-newArticles">
+                <!-- SIDEBAR START -->
+                <div class="col-xl-3">
+                    <div class="ps-gridList__searchArea ps-articles__search">
+                        <h6>Start Your Search</h6>
+                        <form class="ps-form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter Keyword" aria-label="Enter Keyword" aria-describedby="button-addon1">
+                                <div class="input-group-append">
+                                    <button class="btn" type="button" id="button-addon1"><i class="ti-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ps-gridList__searchArea ps-gridList__categories">
+                        <h6>Categories</h6>
+                        <div class="ps-gridList__checkbox">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check1">
+                                <label class="form-check-label" for="check1">Show All <span>(256)</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2">
+                                <label class="form-check-label" for="check2">Mobiles/Tablets <span>(53,165)</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check3">
+                                <label class="form-check-label" for="check3">Vehicles <span>(7562)</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check4">
+                                <label class="form-check-label" for="check4">Houses <span>(35)</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check5">
+                                <label class="form-check-label" for="check5">Land & Plots <span>(845)</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check6">
+                                <label class="form-check-label" for="check6">Entertainment <span>(4223)</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check7">
+                                <label class="form-check-label" for="check7">Animals & Pets <span>(5624)</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check8">
+                                <label class="form-check-label" for="check8">Kids Zone <span>(1245)</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check9">
+                                <label class="form-check-label" for="check9">Beauty & Fashion <span>(06)</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ps-gridList__searchArea ps-newArticles-comments">
+                        <h6>Most Commented</h6>
+                        <div class="ps-newArticles-comments__section">
+                            <figure><img src="images/blog-grid/icon/img-01.jpg" alt="Image Description"></figure>
+                            <div class="ps-newArticles-comments__description">
+                                <h6><a href="javascript:void(0);">Make Money Easy As Pies</a></h6>
+                                <p>Jun 27,2019</p>
+                            </div>
+                        </div>
+                        <div class="ps-newArticles-comments__section">
+                            <figure><img src="images/blog-grid/icon/img-02.jpg" alt="Image Description"></figure>
+                            <div class="ps-newArticles-comments__description">
+                                <h6><a href="javascript:void(0);">Learn Top 10 Tricks To</a></h6>
+                                <p>Jun 27,2019</p>
+                            </div>
+                        </div>
+                        <div class="ps-newArticles-comments__section">
+                            <figure><img src="images/blog-grid/icon/img-03.jpg" alt="Image Description"></figure>
+                            <div class="ps-newArticles-comments__description">
+                                <h6><a href="javascript:void(0);">Things You Should Star</a></h6>
+                                <p>Jun 27,2019</p>
+                            </div>
+                        </div>
+                        <div class="ps-newArticles-comments__section">
+                            <figure><img src="images/blog-grid/icon/img-04.jpg" alt="Image Description"></figure>
+                            <div class="ps-newArticles-comments__description">
+                                <h6><a href="javascript:void(0);">Crypto Mania 2019</a></h6>
+                                <p>Jun 27,2019</p>
+                            </div>
+                        </div>
+                        <div class="ps-newArticles-comments__section">
+                            <figure><img src="images/blog-grid/icon/img-05.jpg" alt="Image Description"></figure>
+                            <div class="ps-newArticles-comments__description">
+                                <h6><a href="javascript:void(0);">Best Deal That Every Si</a></h6>
+                                <p>Jun 27,2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ps-gridList__searchArea ps-gridList__ad">
+                        <a href="javascript:void(0);"><figure><img src="images/ad-img.jpg" alt="Image Description"></figure></a>
+                        <span>Advertisement  255px X 255px</span>
+                    </div>
+                </div>
+                <!-- SIDEBAR END -->
+                <!-- MAIN CONTENT START -->
+                <div class="col-xl-9">
+                    <div class="ps-uniqueGadgets">
+                        <div class="ps-uniqueGadgets__heading">
+                            <p>456 Articles Published</p>
+                            <h4>Latest & Updated News Articles</h4>
+                        </div>
+                        <div class="ps-uniqueGadgets__content">
+                            <label class="ps-sort">
+                                <select class="form-control">
+                                    <option selected="" hidden="">Sort By:</option>
+                                    <option>All</option>
+                                    <option>Half</option>
+                                </select>
+                            </label>
+                            <button class="btn ps-active ps-btn"><i class="ti-view-list"></i></button>
+                            <button class="btn ps-btn ps-outline-btn"><i class="ti-layout-grid2"></i></button>
+                        </div>
+                    </div>
+                    <div class="row ps-articles ps-gridArticles">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/articles/img-01.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Admin</a>
+                                    <h6 class="card-text">Make Money Easy As Pie</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/articles/img-02.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Almana Kurame</a>
+                                    <h6 class="card-text">Learn Top 10 Tricks To Sell Your Items</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/articles/img-03.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Ibrahim Styne</a>
+                                    <h6 class="card-text">Things You Should Start Doing Wi...</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom Consectetur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-01.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Almana Kurame</a>
+                                    <h6 class="card-text">Crypto Mania 2019</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-02.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Almana Kurame</a>
+                                    <h6 class="card-text">Best Deal That Every Sing</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-03.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Ibrahim Styne</a>
+                                    <h6 class="card-text">Easy Way To Make Profit</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-04.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Almana Kurame</a>
+                                    <h6 class="card-text">How To Get Approve You</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-05.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Almana Kurame</a>
+                                    <h6 class="card-text">2019 Best Logo Collection</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-06.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Ibrahim Styne</a>
+                                    <h6 class="card-text">Showcase Your Items</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-07.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Ibrahim Styne</a>
+                                    <h6 class="card-text">Easy Way To Make Profit</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-08.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="javascript:void(0);">By Almana Kurame</a>
+                                    <h6 class="card-text">Crypto Mania 2019</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <figure>
+                                    <img src="images/blog-grid/img-09.jpg" class="card-img-top" alt="Image Description">
+                                </figure>
+                                <div class="card-body">
+                                    <a href="#">By Almana Kurame</a>
+                                    <h6 class="card-text">Best Deal That Every Sing.</h6>
+                                    <span>Jun 27,2 019</span>
+                                    <p>Consectetur adipisicing elite aeiuim setiusm tempor incididunt labore etnalom...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="ps-page">
+                                <div class="ps-button-left">
+                                    <button class="btn ps-btn"><span class="lnr lnr-chevron-left"></span></button>
+                                </div>
+                                <div class="ps-button-num">
+                                    <button class="btn ps-btn"><span>1</span></button>
+                                    <button class="btn ps-active ps-btn"><span>2</span></button>
+                                    <button class="btn ps-btn"><span>3</span></button>
+                                    <button class="btn ps-btn"><span>4</span></button>
+                                    <button class="btn ps-btn"><span>...</span></button>
+                                    <button class="btn ps-btn"><span>50</span></button>
+                                </div>
+                                <div class="ps-button-right">
+                                    <button class="btn ps-btn"><span class="lnr lnr-chevron-right"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAIN CONTENT END -->
+            </div>
+        </section>
+    </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <footer class="ps-main-footer">
+        <section class="ps-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-6">
+                        <div class="ps-footer__left">
+                            <figure><img src="images/footer/img-01.png" alt="Image Description"></figure>
+                            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt utbor etian dolm magna aliqua enim ad minim veniam quis nostrud exercita ullamco laboris nisie aliquip commodo okialama sikune pisuye.</p>
+                            <ul class="ps-footer__contact">
+                                <li><a href="javascript:void(0);"><i class="lnr lnr-location"></i> 123 New Design Street, Melbour Australia 54214</a></li>
+                                <li><a href="javascript:void(0);"><i class="lnr lnr-envelope"></i> info@domainurl.com</a></li>
+                                <li><a href="javascript:void(0);"><i class="lnr lnr-phone-handset"></i> (0800) 1234 567891</a></li>
+                            </ul>
+                            <ul class="ps-footer__social-media">
+                                <li class="ps-facebook"><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="ps-twitter"><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+                                <li class="ps-linkedin"><a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="ps-instagram"><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+                                <li class="ps-youtube"><a href="javascript:void(0);"><i class="fab fa-youtube"></i></a></li>
+                                <li class="ps-google-plus"><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ps-footer__link">
+                            <h6>Useful Links</h6>
+                            <ul>
+                                <li><a href="javascript:void(0);">How it works?</a></li>
+                                <li><a href="javascript:void(0);">About</a></li>
+                                <li><a href="javascript:void(0);">Listing Grid</a></li>
+                                <li><a href="javascript:void(0);">Listing Single -  With Chatbox</a></li>
+                                <li><a href="javascript:void(0);">Latest Article Grid</a></li>
+                                <li><a href="javascript:void(0);">Latest Article Detail</a></li>
+                                <li><a href="javascript:void(0);">Login Or Register</a></li>
+                                <li><a href="javascript:void(0);">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ps-footer__newsletter">
+                            <h6>Newsletter</h6>
+                            <p>Eiusmod tempor incididunt utbor etian dolm magna aliqua enim minim</p>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="ti-arrow-right"></i></button>
+                                </div>
+                            </div>
+                            <h6>Download Mobile App</h6>
+                            <div class="ps-footer__img">
+                                <a href="javascript:void(0);"><figure><img src="images/footer/img-02.png" alt="Image Description"></figure></a>
+                                <a href="javascript:void(0);"><figure><img src="images/footer/img-03.png" alt="Image Description"></figure></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="ps-footer-down">
+            <P>Copyrights © 2019 by<a href="javascript:void(0);"> PSello</a>. All Rights Reserved.</P>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/jquery-library.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.ui.touch-punch.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+<!-- Mirrored from amentotech.com/htmls/psello/blog-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Nov 2020 10:38:46 GMT -->
+</html>

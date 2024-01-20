@@ -1,0 +1,720 @@
+@import "mixin/mixin.scss";
+@import "extends/extend.scss";
+@import "variables.scss";
+@import "admin.scss";
+@import "icon/fontawesome.scss";
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+i { 
+    font-family: 'FontAwesome', sans-serif; 
+}
+img{
+    height: 100%;
+    width:100%
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
+    width: 100%;
+    @media (min-width: 1200px) {
+        max-width:1170px
+    }
+}
+
+
+body { 
+    font-family: $font-body;
+    overflow-x: hidden;
+    background: $bg-body;
+    color: $color-body;
+
+    h1 , .h1{
+        font-size: 35px;
+        @media (max-width:1199px) {
+            font-size: 32px;
+        }
+        @media (max-width:991px) {
+            font-size: 30px;
+        }
+        @media (max-width:767px) {
+            font-size: 28px;
+        }
+        @media (max-width:600px) {
+            font-size: 25px;
+        }
+        @media (max-width:400px) {
+            font-size: 22px;
+        }
+    }
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+    &.btn{
+        font-size: 14px;
+        border-radius: 0;
+        padding: 7px 10px 7px !important;
+        line-height: 1.3 !important;
+        margin: auto;
+    }
+}
+.handwritten{ 
+   /*  font-family: Tropical Country; */
+   font-family: 'Island Moments', cursive;
+}
+.scrolled-offset {
+    margin-top: 62px;
+  }
+.main{
+    color: #fff;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../img/shape_right.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: 0;
+        top: 0;
+        height: 35%;
+        max-width: 89px;
+        width: 12%;
+        z-index: -1;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(../img/etoile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 11%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 20px;
+        width: 20px;
+        z-index: -1;
+    }
+    section.content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        z-index: 1;
+        @media (max-width:991px) {
+            padding: 25px 0;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(../img/shape_bottom_right.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: 5%;
+            bottom: 0;
+            height: 165px;
+            max-width: 230px;
+            width: 72%;
+            z-index: -1;
+            @media (max-width:767px) {
+                right: 0;
+
+            }
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url(../img/shape_bottom.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 0;
+            bottom: 0;
+            height: 133px;
+            max-width: 185px;
+            width: 38%;
+            z-index: -1;
+            @media (max-width:600px) {
+                display: none;
+            }
+        }
+        .cnt{
+            position: relative;
+            height: 100%;
+            margin: 0 auto;
+            flex-direction: row;
+            @media (max-width:991px) {
+                flex-direction: column-reverse;
+            }
+            
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url(../img/etoile.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                right: 0;
+                bottom: 27%;
+                margin: auto;
+                height: 20px;
+                width: 12px;
+                z-index: -1;
+            }
+            .cnt_image{
+                max-width: 500px;
+                width: 100%;
+                margin: 30px auto 0;
+                @media (min-width:992px) {
+                    max-width: 420px;
+                    margin:0 auto;
+                }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    background-image: url(../img/etoile.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    right: 5%;
+                    top: 11%;
+                    margin: auto;
+                    height: 20px;
+                    width: 20px;
+                    z-index: -1;
+                }
+            }
+            .col-text{
+                position: relative;
+                
+            }
+            .cnt_text{
+                
+                @media (min-width:992px) {
+                    text-align: left;
+                    max-width: 500px;
+                    margin: 0 auto 0 0;
+                }
+                @media (max-width:1601px) {
+                   
+                    max-width: 566px;
+                }
+                @media (max-width:991px) {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                .titre_section{
+                    font-family: $font2;
+                    font-size: 73px;
+                    line-height: 1.1;
+                    margin-bottom: 25px;
+                    span{
+                        display: block;
+                    }
+                    position: relative;
+                    padding-top: 50px;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        background-image: url(../img/etoile.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        right: 25%;
+                        top: 0;
+                        height: 20px;
+                        width: 20px;
+                        z-index: -1;
+                    }
+                    @media (max-width:1600px) {
+                        font-size: 70px;
+                    }
+                    @media (max-width:1400px) {
+                        font-size: 60px;
+                    }
+                    @media (max-width:1199px) {
+                        font-size: 50px;
+                    }
+                    @media (max-width:991px) {
+                        font-size: 45px;
+                    }
+                    @media (max-width:767px) {
+                        font-size: 40px;
+                    }
+                    @media (max-width:600px) {
+                        font-size: 35px;
+                    }
+                    @media (max-width:480px) {
+                        font-size: 30px;
+                    }
+                    @media (max-width:400px) {
+                        font-size: 25px;
+                    }
+                }
+                .sous_titre_section{
+                    font-family: $font-body;
+                    font-weight: 500;
+                    font-size: 40px;
+                    margin-bottom: 25px;
+                    @media (max-width:1199px) {
+                        font-size: 38px;
+                    }
+                    @media (max-width:991px) {
+                        font-size: 36px;
+                    }
+                    @media (max-width:767px) {
+                        font-size: 32px;
+                    }
+                    @media (max-width:600px) {
+                        font-size: 28px;
+                    }
+                    @media (max-width:480px) {
+                        font-size: 24px;
+                    }
+                    @media (max-width:400px) {
+                        font-size: 22px;
+                    }
+                }
+                .text_section{
+                    font-family: $font-body;
+                    font-weight: 400;
+                    font-size: 15px;
+                    @media (max-width:1199px) {
+                        font-size: 14px;
+                    }
+                }
+                .btn{
+                    background: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    &:hover{
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .porte_etoile{
+            position: relative;
+            padding-top: 40px;
+            width: 50%;
+            margin: 0 0 0 auto;
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url(../img/etoile.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                left: 15%;
+                bottom: 0%;
+                margin: auto;
+                height: 20px;
+                width: 12px;
+                z-index: -1;
+            }
+        }
+    }
+    
+}  
+
+.header{
+    &:not(.sticky){
+        background: transparent;
+        box-shadow: none;
+    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //height: 60px;
+    background: $bg-header;
+    color: $color-header;
+    box-shadow: 0 1px 1px rgba(255,255,255,.1);
+    transition: all 0.5s;
+    z-index: 999;
+    @media (max-width:767px){
+        height:auto !important;
+    }
+    .header_bottom{
+        height: 100px;
+        position: relative;
+        @media (max-width:991px) {
+            align-items: center !important;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(../img/header_shape.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 116px;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 30%;
+            z-index: -1;
+            @media (max-width:991px) and (min-width:768px) {
+                display: none;
+            }
+            @media (max-width:767px) {
+                max-width: 80px;
+                left: auto;
+                right: 25%;
+            }
+            @media (max-width:400px) {
+                display: none;
+            }
+        }
+    }
+    nav.navbar{
+        @media (min-width:992px) {
+            margin-bottom: -15px;
+        }
+    }
+    .slogan-header{
+        max-width: 250px;
+        width: 100%;
+        
+        @media (min-width:768px) {
+            margin-top: -30px; 
+        }
+        @media (max-width:480px) {
+            max-width: 180px;
+        }
+
+    }
+
+    nav{
+        ul{
+            
+            li{
+                a{
+                    display: block;
+                    padding: 10px;
+                    margin: 0 12px;
+                    font-size: 14px;
+                    font-weight: 500 ;
+                    text-transform: uppercase;
+                    color: $color-header;
+                    text-decoration: none;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+                    &:hover , &:focus , &.active{
+                        color: $color-header-hover;
+                        //font-weight: 600;
+                    }
+
+                }
+            }
+        }
+      
+    }
+    .navbar-expand-lg {
+          
+        .navbar-toggler {
+            @media (min-width:768px) {
+                display: none;
+            }
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }   
+        .navbar-collapse {
+            @media (min-width:768px) {
+                display: flex!important;
+                flex-basis: auto;
+            }
+        }
+        .navbar-nav {
+             @media (min-width:768px) {
+                flex-wrap: wrap;
+            } 
+        }
+    }
+    
+}
+
+[type=button]:not(.collapsed){
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+[type=button].collapsed{
+    position: relative;
+}
+button.navbar-toggler{
+    border: none !important;
+    box-shadow: none !important;
+    .navbar-toggler-icon {
+        background-image: url("../img/menu-blanc.svg") !important;
+    }
+}
+ 
+.navbar-collapse.collapse{
+    @media (max-width:767px) {
+        background: $bg-header;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: block !important;
+        opacity: 0;
+        z-index: -1;
+           
+    ul{
+        height: 80%;
+        justify-content: center;
+        overflow: auto;
+        display: block;
+        margin-top: 60px ;
+    
+        li{
+            a{
+                color: $color-header;
+                &:hover , &:focus , &.active{
+                    color: $color-header-hover;
+                }
+
+            }
+        }
+    }
+    }
+   
+}
+.navbar-collapse.collapse.show{
+       
+    display: block !important;
+    opacity: 1;
+    z-index: 99;
+    
+ 
+    
+}
+
+
+
+
+.social-icons{
+    text-align: center;
+    padding: 0 20px;
+    ul{
+        //padding-left: 0;
+        list-style: none;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 7px;
+        background-color: transparent;
+        border-radius: 50%;
+        height: 38px;
+        width: 38px;
+        
+        &:first-child{
+            margin-left: 0;
+        }
+        a{
+            color: #fff;
+            &:hover{
+                color: $footer-hover;
+            }
+        }
+      }
+}
+
+.items-view{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: none;
+    justify-content: center;
+    div.item{
+       
+        .image_item{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            border: 10px solid #fff;
+            &::before{
+                position: relative;
+                content: "";
+                display: block;
+                padding-top: 200px;
+            }
+            
+        }
+        &-title{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .cnt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            padding-top: 10px;
+            &::before{
+                position: absolute;
+                content: "";
+                background: #fff;
+                top: 0;
+                right: auto;
+                left: auto;
+                height: 1px;
+                width: 30px;
+            }
+        }
+        @media (min-width:601px) {
+            &:first-child{
+                width: 100%;
+                margin: 0 0 15px 0;
+                .image_item{
+                    &::before{
+                        padding-top: 160px;
+                    }
+                }
+            }
+            &:nth-child(1n+2){
+                max-width: calc((100% - 15px)/2);
+                margin: 0 15px 15px 0px;
+                width: 100%;
+                .image_item{
+                    &::before{
+                        padding-top: 230px;
+                    }
+                }
+            }
+            &:nth-child(2n+3){
+                margin-right: 0;
+            }
+        }
+        @media (max-width:600px) {
+            max-width: 450px;
+            width: 100%;
+            margin: 0 0 15px 0;
+        }
+    }
+}
+
+footer{
+    .social-icons{
+        a{
+            i{
+                font-size:25px;
+                @media(max-width:767px){
+                    font-size:22px
+                }
+                &.fa.fa-envelope{
+                font-size:22px;
+                @media(max-width:767px){
+                    font-size:18px
+                }
+                }
+            }
+        }
+
+    }
+   
+    .section{
+        padding: 0;
+    }
+    .section-title{
+        font-size: 14px;
+        margin-bottom: 0;
+        color:#fff;
+        @media (max-width:991px) {
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+    .top-footer{
+        display: flex;
+        flex-wrap: wrap;
+       // flex-direction: row;
+       @media (min-width:768px){
+        max-width:900px
+       }
+    }
+    .contact{
+        background-color: $bg_footer_left;
+        color: $color_footer_left;
+        min-height: 100px;
+    }
+    .item-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .social-icons{
+            margin: 10px 0;
+        }
+        @media (max-width:767px){
+            flex-direction: column;
+        }
+    }
+    .copyright{
+        //background-color: $second-color;
+       // border-top: 1px solid $general-color;
+        padding: 14px 0;
+        //min-height: 120px;
+        position: relative;
+        &:before{
+            position: absolute;
+            content: "";
+            background-color: $general-color;
+            height: 1px;
+            max-width: 800px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: none;
+
+        }
+    }
+}
+
+section.breadcrumbs{
+    background:$bg_section_dark ;
+    padding: 15px 10px;
+    color: #000;
+    margin-top: 60px;
+    ol{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        padding: 5px 2px;
+        position: relative;
+        &:first-child{
+            a{
+                text-decoration: none;
+                color: $general-color;
+                padding-right: 30px;
+                &::before{
+                    position: absolute;
+                    content: ">";
+                    color: #000;
+                    top: auto;
+                    right: 0;
+                    height: 25px;
+                    width: 18px;
+                }
+                &:hover{
+                    color: #000;
+                }
+            }
+            
+        }
+    }
+}

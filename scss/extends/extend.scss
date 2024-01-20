@@ -1,0 +1,6 @@
+//contrairement aux mixins, pas besoin de les déclarer avec un identifiant spécifique – il suffit de les écrire comme un simple sélecteur
+%typo{
+    color: red !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+}

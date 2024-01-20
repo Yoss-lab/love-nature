@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="100" height="100" fill="#fff" transform-origin="center" font-weight="100" >
+            <defs>
+                <path id="circle"
+                d="
+                    M 50, 50
+                    m -37, 0
+                    a 37,37 0 1,1 74,0
+                    a 37,37 0 1,1 -74,0"/>
+            </defs>
+            <text font-size="14" >
+                <textPath xlink:href="#circle">
+                #Laravel #JS #Sass #HTML #PHP #SQL
+                </textPath>
+            </text>
+        </svg>

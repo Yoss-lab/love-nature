@@ -1,0 +1,55 @@
+@mixin heading-shadow($color : #15dea5 , $shadow-size : 2px){
+   
+    @if(lightness($color) > 25%){
+        $color: darken($color,30%);
+    }@else{
+        $color: lighten($color,30%);
+    }
+        text-shadow: $shadow-size 5px $color;
+}
+/* map */
+/* @mixin palettes($state){
+    $pal : map-get($map2, $state );
+
+    color : map-get($pal , couleur );
+    background-color: map-get($pal , bg ) ;
+    border: 10px solid map-get($pal , bordure );
+} */
+
+@mixin palettes($state){
+   // $pal : map-get($map2, $state );
+    @each $state , $pal in $state {
+        &:#{$state}{
+            color : map-get($pal , couleur );
+            background-color: map-get($pal , bg ) ;
+            border: 10px solid map-get($pal , bordure );
+        }
+        &.#{$state}{
+            color : map-get($pal , couleur );
+            background-color: map-get($pal , bg ) ;
+            border: 10px solid map-get($pal , bordure );
+        }
+    }
+    
+}
+
+@mixin title_colors($color){
+     @each $color , $pal in $color {
+        .title-color-#{$color}{
+             color : map-get($pal , couleur );
+             
+         }
+       
+     }
+     
+ }
+
+
+/* map pour le responsie */
+
+@mixin mobile-600 {
+    @media  (max-width:600px) {
+        @content
+    }
+}
+
