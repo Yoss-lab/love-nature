@@ -611,9 +611,9 @@ button.navbar-toggler{
 
 footer{
     a{
-        color: $general-color;
+        color: $general-color !important;
         &:hover{
-            color: #fff;
+            color: #fff !important;
         }
     }
     .social-icons{
