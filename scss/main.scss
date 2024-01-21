@@ -57,6 +57,10 @@ li{
 }
 a{
     text-decoration: none !important;
+    color: $general-color;
+    &:hover, &:focus{
+        color: #fff;
+    }
     &.btn{
         font-size: 14px;
         border-radius: 0;
@@ -717,4 +721,11 @@ section.breadcrumbs{
             
         }
     }
+}
+
+footer {
+    background: linear-gradient(49.24deg, rgb(26, 26, 37) 0%, rgb(28, 40, 28) 50%, rgb(28, 40, 28) 100%);
+    padding: 30px 0;
+    border-top: 1px solid #323232;
+    text-align: center;
 }
