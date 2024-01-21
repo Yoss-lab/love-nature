@@ -610,6 +610,12 @@ button.navbar-toggler{
 }
 
 footer{
+    a{
+        color: $general-color;
+        &:hover{
+            color: #fff;
+        }
+    }
     .social-icons{
         a{
             i{
